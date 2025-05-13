@@ -15,7 +15,8 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         // Permitimos recibir solicitudes desde este origen
-        config.addAllowedOrigin("http://localhost:3000");  // En producción, especifica los orígenes exactos
+        //config.addAllowedOrigin("http://localhost:3000");
+        config.addAllowedOrigin("https://study-tracker-front.vercel.app");
 
         // Permitimos estos headers
         config.addAllowedHeader("*");
