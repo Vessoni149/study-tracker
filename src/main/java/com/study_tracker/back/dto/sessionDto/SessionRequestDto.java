@@ -23,7 +23,7 @@ public class SessionRequestDto {
 
     private SubjectRequestDto subject;
     @NotNull(message = "El campo 'hours' no puede ser 'null'")
-    @DecimalMin(value = "1.0", message = "La hora mínima es 1.0 horas")
+    @DecimalMin(value = "0.0", message = "La hora mínima es 0.0 horas")
     @DecimalMax(value = "24.0", message = "Las horas máximas son 24.0 horas")
     private double hours;
 
